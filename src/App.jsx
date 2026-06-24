@@ -1,20 +1,21 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About"
 import Register from "./pages/Register"
+import Order from "./pages/Order"
 
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Login />} />
 
         <Route path="/About" element={<About />} />
         <Route path="/Register" element={<Register />} />
-
+        <Route path="/order" element={<Order />} />
 
 
         {/* 404 route */}
