@@ -1,11 +1,12 @@
-import Logo from './logo.png';
+import Logo from '../assets/logo.jpeg';
 import pw1 from './pw1.png';
 import pw2 from './pw2.png';
 import pw3 from './pw3.png';
 import bubur from './bubur.png';
 import nasigo from './nasigo.png';
 import awal from './awal.png';
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const slides = [
   { src: awal, alt: "daftar menu" },
@@ -131,9 +132,12 @@ export default function Home() {
                 <h3 className='text-xs font-bold mb-1.5 leading-snug'>{menu.name}</h3>
                 <p className='text-sm font-bold text-red-700 mb-3'>{menu.price}</p>
                 <div className='flex gap-2'>
-                  <a href='#' className='flex-1 text-center text-xs font-semibold border border-red-700 text-red-700 hover:bg-red-700 hover:text-white rounded-md py-1.5 transition-colors'>
+                  <Link
+                    to={`/menu/${encodeURIComponent(menu.name)}`}
+                    className='flex-1 text-center text-xs font-semibold border border-red-700 text-red-700 hover:bg-red-700 hover:text-white rounded-md py-1.5 transition-colors'
+                  >
                     Details
-                  </a>
+                  </Link>
                   <a href='#' className='flex-1 text-center text-xs font-semibold bg-red-700 hover:bg-red-800 text-white rounded-md py-1.5 transition-colors'>
                     + Order
                   </a>
@@ -150,7 +154,7 @@ export default function Home() {
         <div className='grid grid-cols-1 md:grid-cols-4 gap-10 mb-10'>
 
           <div>
-            <img src= {Logo} alt='HokBen' className='h-10 mb-5' />
+            <img src={Logo} alt='HokBen' className='h-10 mb-5' />
             <p className='text-xs leading-relaxed mb-5'>
               Restoran Cepat Saji autentik Bandung terfavorit dengan menu lezat dan halal. Nikmati promo terbaru dan temukan restoran Ichiban Sangu terdekat di kota Anda.
             </p>
