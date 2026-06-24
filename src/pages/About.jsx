@@ -64,7 +64,7 @@ export default function Home() {
 
       {/* NAVBAR */}
       <nav className='bg-white flex items-center justify-between px-10 h-16 shadow-md sticky top-0 z-50'>
-        <a href='/'>
+        <a href='../'>
           <img src={Logo} alt='Logo HokBen' className='h-12' />
         </a>
         <ul className='hidden md:flex gap-7 list-none'>
@@ -138,7 +138,7 @@ export default function Home() {
                   >
                     Details
                   </Link>
-                  <a href='order' className='flex-1 text-center text-xs font-semibold bg-red-700 hover:bg-red-800 text-white rounded-md py-1.5 transition-colors'>
+                  <a href='/order' className='flex-1 text-center text-xs font-semibold bg-red-700 hover:bg-red-800 text-white rounded-md py-1.5 transition-colors'>
                     + Order
                   </a>
                 </div>
