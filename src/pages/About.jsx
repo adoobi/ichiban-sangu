@@ -118,7 +118,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* RECOMMENDATION */}
+      {/* RECOMMENDATIONss */}
       <section className='bg-stone-50 py-14 px-10'>
         <div className='text-center mb-9'>
           <p className='text-xs font-bold tracking-widest uppercase text-red-700 mb-2'>Menu Pilihan</p>
