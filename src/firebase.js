@@ -1,18 +1,19 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
-// TODO: Replace the following with your app's Firebase project configuration
-// See: https://support.google.com/firebase/answer/7015592
 const firebaseConfig = {
-    FIREBASE_CONFIGURATION    // change your firebase config here...
+  apiKey: "AIzaSyCeqjXA3FTTH_WGcmCqOqSa3VmDB4nd2AA",
+  authDomain: "ichiban-sangu-adoobi.firebaseapp.com",
+  projectId: "ichiban-sangu-adoobi",
+  storageBucket: "ichiban-sangu-adoobi.firebasestorage.app",
+  messagingSenderId: "956261995807",
+  appId: "1:956261995807:web:5c9e4ad6bcfc1138c8cc2a"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
+export const db = getFirestore(app);
+export const auth = getAuth(app);
 
-// Initialize Cloud Firestore and get a reference to the service
-const db = getFirestore(app);
-
-
-// https://firebase.google.com/docs/firestore/manage-data/add-data
+export default app;
