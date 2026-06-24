@@ -1,22 +1,27 @@
 import Logo from './logo.png';
-
+import pw1 from './pw1.png';
+import pw2 from './pw2.png';
+import pw3 from './pw3.png';
+import bubur from './bubur.png';
+import nasigo from './nasigo.png';
+import awal from './awal.png';
 import { useState, useEffect, useRef } from "react"
 
 const slides = [
-  { src: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/slider/17152ba8700725d527b883284809776f-1775531683601", alt: "Gyoza Kawa Chips" },
-  { src: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/slider/ee01b820406c38ce71fd32ea094db1d0-1780370998978", alt: "Irodori Bento" },
-  { src: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/slider/0713919423671ddc12b0650af25fa6b0-1772765453073", alt: "Irodori Bento Itamemono" },
-  { src: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/slider/792895f2d4665bf30c61e89716a2eff6-1772765476786", alt: "Irodori Bento Agemono" },
-  { src: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/slider/f3a43191a544cc441fc843542a0c0833-1740046518067", alt: "Katsu Sando" },
-  { src: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/slider/a2db503b5155dbad909b1a4f3c10d323-1740046463912", alt: "Hoka Ichiman" },
+  { src: awal, alt: "daftar menu" },
+  { src: pw1, alt: "paket wareg 1" },
+  { src: pw2, alt: "paket wareg 2" },
+  { src: pw3, alt: "paket wareg 3" },
+  { src: bubur, alt: "bubur" },
+  { src: nasigo, alt: "nasi" },
 ]
 
 const menus = [
-  { name: "IRODORI BENTO 1", price: "Rp 53.637", img: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/menu/453f1c02ec959fff8cf3141fc2c89e19-1766995036315" },
-  { name: "IRODORI BENTO 2", price: "Rp 58.182", img: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/menu/7e764d8a5161329edb26d67dcc8eadd4-1766995048077" },
-  { name: "IRODORI BENTO 3", price: "Rp 53.637", img: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/menu/c9c297e2b56b57f47a9466b77ed72125-1766995060156" },
-  { name: "OKAYU NI TAMAGO", price: "Rp 10.000", img: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/menu/592fedee7c9cf9780e092e813f42ecbd-1731897193745" },
-  { name: "SPICY YAKIMESHI", price: "Rp 10.000", img: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/menu/a82c9e85d962c95b8b82d59d68f4dcb7-1748339634775" },
+  { name: "PAKET WAREG 1", price: "Rp 29.000", img: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/menu/453f1c02ec959fff8cf3141fc2c89e19-1766995036315" },
+  { name: "PAKET WAREG 2", price: "Rp 31.000", img: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/menu/7e764d8a5161329edb26d67dcc8eadd4-1766995048077" },
+  { name: "PAKET WAREG 3", price: "Rp 33.000", img: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/menu/c9c297e2b56b57f47a9466b77ed72125-1766995060156" },
+  { name: "BUBUR AYAM TELOR", price: "Rp 18.000", img: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/menu/592fedee7c9cf9780e092e813f42ecbd-1731897193745" },
+  { name: "NASI GORENG TELOR", price: "Rp 18.000", img: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/menu/a82c9e85d962c95b8b82d59d68f4dcb7-1748339634775" },
 ]
 
 const navLinks = ["Home", "Menu", "Outlet", "Promotion", "Corporate", "News & Events", "Contact Us"]
@@ -145,7 +150,7 @@ export default function Home() {
         <div className='grid grid-cols-1 md:grid-cols-4 gap-10 mb-10'>
 
           <div>
-            <img src='https://www.hokben.co.id/assets/img/logo_hokben_1.png' alt='HokBen' className='h-10 mb-4 brightness-0 invert' />
+            <img src= {Logo} alt='HokBen' className='h-10 mb-5' />
             <p className='text-xs leading-relaxed mb-5'>
               Restoran Cepat Saji autentik Bandung terfavorit dengan menu lezat dan halal. Nikmati promo terbaru dan temukan restoran Ichiban Sangu terdekat di kota Anda.
             </p>
@@ -202,7 +207,7 @@ export default function Home() {
           <div>
             <h5 className='text-xs font-bold text-white uppercase tracking-widest mb-4'>Hubungi Kami</h5>
             <ul className='space-y-2.5'>
-              <li><a href='mailto:cs@hokben.co.id' className='text-xs text-white/65 hover:text-white transition-colors'>cs@hokben.co.id</a></li>
+              <li><a href='mailto:cs@hokben.co.id' className='text-xs text-white/65 hover:text-white transition-colors'>erlangga@ichisangu.co.id</a></li>
               <li><a href='https://wa.me/6281111500505' className='text-xs text-white/65 hover:text-white transition-colors'>0811-1150-0505</a></li>
             </ul>
           </div>
@@ -211,7 +216,7 @@ export default function Home() {
 
         <div className='border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-white/45'>
           <p>© 2024 PT. Erlangga Bogacore. All rights reserved.</p>
-          <p>Contact: <a href='mailto:cs@hokben.co.id' className='text-white/65 hover:text-white'>cs@hokben.co.id</a></p>
+          <p>Contact: <a href='mailto:cs@hokben.co.id' className='text-white/65 hover:text-white'>erlangga@ichisangu.co.id</a></p>
         </div>
       </footer>
 
