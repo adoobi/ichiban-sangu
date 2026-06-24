@@ -10,7 +10,7 @@ import MenuDetail from "./pages/MenuDetail";
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ichiban-sangu">
       <Routes>
         <Route path="/" element={<Login />} />
 
