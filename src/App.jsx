@@ -15,14 +15,14 @@ function App() {
         <Route path="/" element={<Login />} />
 
         <Route path="/about" element={<About />} />
-        <Route path="/Register" element={<Register />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/order" element={<Order />} />
 
         <Route path="/menu/:name" element={<MenuDetail />} />
 
 
         {/* 404 route */}
-        <Route path="*" element={<NotFound />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
