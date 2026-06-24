@@ -2,6 +2,9 @@ import { useParams, Link } from "react-router-dom"
 import { useMemo } from "react"
 import Logo from '../assets/logo.jpeg';
 
+const navLinks = ["Home", "Menu", "Outlet", "Promotion", "Corporate", "News & Events", "Contact Us"]
+
+
 const menus = [
   {
     name: "PAKET WAREG 1",
@@ -44,9 +47,32 @@ export default function MenuDetail() {
 
   if (!menu) {
     return (
-      <div className="p-10">
-        <p>Menu tidak ditemukan</p>
-        <Link to="/about" className="text-red-700">Kembali</Link>
+      <div className="h-screen  p-10">
+              {/* NAVBAR */}
+              <nav className='bg-white flex items-center justify-between px-10 h-16 shadow-md sticky top-0 z-50'>
+                <a href='/'>
+                  <img src={Logo} alt='Logo HokBen' className='h-12' />
+                </a>
+                <ul className='hidden md:flex gap-7 list-none'>
+                  {navLinks.map((link) => (
+                    <li key={link}>
+                      <a href='#' className='text-sm font-medium text-gray-800 hover:text-red-700 transition-colors'>
+                        {link}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+                <a href='/order' className='bg-red-700 hover:bg-red-800 text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors'>
+                  Order Now
+                </a>
+              </nav>
+        <div className="flex flex-col gap-2 items-center justify-center h-full">
+            <p className="text-lg font-semibold">Menu tidak ditemukan :(</p>
+            <p>Link sudah tidak tersedia atau sudah dipindahkan</p>
+            <Link to="/about" className="border border-gray-200 px-4 py-2 rounded-lg inline-block mt-2 text-sm text-gray-500 hover:text-white hover:bg-red-800 transition">
+            ← Kembali
+            </Link>
+        </div>
       </div>
     )
   }
@@ -63,12 +89,24 @@ export default function MenuDetail() {
         </div>
       </div>
 
-      {/* NAVBAR SIMPLE */}
-      <nav className='bg-white flex items-center justify-between px-10 h-16 shadow-md sticky top-0 z-50'>
-        <Link to="/about">
-          <img src={Logo} alt="Logo" className='h-12' />
-        </Link>
-      </nav>
+        {/* NAVBAR */}
+        <nav className='bg-white flex items-center justify-between px-10 h-16 shadow-md sticky top-0 z-50'>
+            <a href='/'>
+            <img src={Logo} alt='Logo HokBen' className='h-12' />
+            </a>
+            <ul className='hidden md:flex gap-7 list-none'>
+            {navLinks.map((link) => (
+                <li key={link}>
+                <a href='#' className='text-sm font-medium text-gray-800 hover:text-red-700 transition-colors'>
+                    {link}
+                </a>
+                </li>
+            ))}
+            </ul>
+            <a href='/order' className='bg-red-700 hover:bg-red-800 text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors'>
+            Order Now
+            </a>
+        </nav>
 
       {/* CONTENT */}
       <div className="max-w-5xl mx-auto px-6 py-14 grid md:grid-cols-2 gap-10">
@@ -94,7 +132,7 @@ export default function MenuDetail() {
             </button>
           </div>
 
-          <Link to="/about" className="inline-block mt-6 text-sm text-gray-500 hover:text-red-700">
+          <Link to="/about" className="border border-gray-200 px-4 py-2 rounded-lg inline-block mt-6 text-sm text-gray-500 hover:text-white hover:bg-red-800 transition">
             ← Back to Home
           </Link>
         </div>
