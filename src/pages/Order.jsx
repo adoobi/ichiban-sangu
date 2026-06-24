@@ -4,31 +4,38 @@ import Logo from "./logo.png"
 const menuData = [
   {
     id: 1,
-    name: "Irodori Bento 1",
-    price: 53637,
+    name: "PAKET WAREG 1",
+    price: 29000,
     category: "Bento",
     img: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/menu/453f1c02ec959fff8cf3141fc2c89e19-1766995036315",
   },
   {
     id: 2,
-    name: "Irodori Bento 2",
-    price: 58182,
+    name: "PAKET WAREG 2",
+    price: 31000,
     category: "Bento",
     img: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/menu/7e764d8a5161329edb26d67dcc8eadd4-1766995048077",
   },
   {
     id: 3,
-    name: "Spicy Yakimeshi",
+    name: "PAKET WAREG 3",
     price: 10000,
     category: "Rice",
     img: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/menu/a82c9e85d962c95b8b82d59d68f4dcb7-1748339634775",
   },
   {
     id: 4,
-    name: "Okayu Ni Tamago",
-    price: 10000,
+    name: "BUBUR AYAM TELOR",
+    price: 18000,
     category: "Rice",
-    img: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/menu/592fedee7c9cf9780e092e813f42ecbd-1731897193745",
+    img: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/menu/c9c297e2b56b57f47a9466b77ed72125-1766995060156",
+  },
+  {
+    id: 5,
+    name: "NASI GORENG TELOR",
+    price: 18000,
+    category: "Rice",
+    img: "https://hokben-images.s3.ap-southeast-3.amazonaws.com/menu/a82c9e85d962c95b8b82d59d68f4dcb7-1748339634775",
   },
 ]
 
