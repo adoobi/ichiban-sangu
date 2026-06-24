@@ -24,7 +24,7 @@ export default function Home() {
 
       console.log("Login Success:", result.user);
 
-      window.location.href = "./about";
+      window.location.href = "/about";
     } catch (error) {
       console.error(error);
 
@@ -125,7 +125,7 @@ export default function Home() {
             {loading ? "Loading..." : "Masuk"}
           </button>
 
-          <a href="./register">Belum punya akun? (masih belum bisa)</a>
+          <a href="/register">Belum punya akun? (masih belum bisa)</a>
         </form>
       </div>
     </div>
