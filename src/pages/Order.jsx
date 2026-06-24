@@ -149,7 +149,7 @@ ${cart.map((i) => `- ${i.name} x${i.qty}`).join("\n")}
           <img src={Logo} className="h-12" />
         </a>
 
-        <a href="/" className="text-red-700 font-semibold">
+        <a href="/about" className="text-red-700 font-semibold">
           ← Kembali
         </a>
       </div>
