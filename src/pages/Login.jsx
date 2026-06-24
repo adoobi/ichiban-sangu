@@ -24,7 +24,7 @@ export default function Home() {
 
       console.log("Login Success:", result.user);
 
-      window.location.href = "/About";
+      window.location.href = "/about";
     } catch (error) {
       console.error(error);
 
