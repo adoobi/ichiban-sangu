@@ -5,7 +5,24 @@
     <link rel="icon" type="image/svg+xml" href="/ichiban-sangu/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ichiban-sangu</title>
-    <script type="module" crossorigin src="/ichiban-sangu/assets/index-C1nkdMU8.js"></script>
+
+    <script>
+    (function () {
+      const redirect = sessionStorage.redirect;
+      if (redirect) {
+        delete sessionStorage.redirect;
+
+        const url = new URL(redirect);
+
+        // remove domain part, keep only path
+        const path = url.pathname + url.search + url.hash;
+
+        history.replaceState(null, null, path);
+      }
+    })();
+  </script>
+  
+    <script type="module" crossorigin src="/ichiban-sangu/assets/index-COFkerJi.js"></script>
     <link rel="stylesheet" crossorigin href="/ichiban-sangu/assets/index-x9JhZ4lB.css">
   </head>
   <body>
