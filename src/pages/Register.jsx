@@ -168,8 +168,8 @@ export default function Register() {
 
         <div className="text-center mt-6">
           <button
-            onClick={() => (window.location.href = "/")}
-            className="text-red-700 text-sm hover:underline"
+            onClick={() => (window.location.href = "../")}
+            className="text-red-700 text-sm hover:underline cursor-pointer"
           >
             Sudah punya akun? Login
           </button>

@@ -24,7 +24,7 @@ export default function Home() {
 
       console.log("Login Success:", result.user);
 
-      window.location.href = "/about";
+      window.location.href = "./about";
     } catch (error) {
       console.error(error);
 
@@ -124,8 +124,10 @@ export default function Home() {
           >
             {loading ? "Loading..." : "Masuk"}
           </button>
+          
+          <a href="./about" className="flex justify-center text-center hover:underline">admin@gmail.com | 1213456</a>
 
-          <a href="/register">Belum punya akun? (masih belum bisa)</a>
+          <a className="text-red-700 text-sm hover:underline text-center flex justify-center" href="./register">Belum punya akun? (WIP)</a>
         </form>
       </div>
     </div>

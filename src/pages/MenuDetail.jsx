@@ -50,7 +50,7 @@ export default function MenuDetail() {
       <div className="h-screen  p-10">
               {/* NAVBAR */}
               <nav className='bg-white flex items-center justify-between px-10 h-16 shadow-md sticky top-0 z-50'>
-                <a href='/'>
+                <a href='../'>
                   <img src={Logo} alt='Logo HokBen' className='h-12' />
                 </a>
                 <ul className='hidden md:flex gap-7 list-none'>
@@ -62,14 +62,14 @@ export default function MenuDetail() {
                     </li>
                   ))}
                 </ul>
-                <a href='/order' className='bg-red-700 hover:bg-red-800 text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors'>
+                <a href='../order' className='bg-red-700 hover:bg-red-800 text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors'>
                   Order Now
                 </a>
               </nav>
         <div className="flex flex-col gap-2 items-center justify-center h-full">
             <p className="text-lg font-semibold">Menu tidak ditemukan :(</p>
             <p>Link sudah tidak tersedia atau sudah dipindahkan</p>
-            <Link to="/about" className="border border-gray-200 px-4 py-2 rounded-lg inline-block mt-2 text-sm text-gray-500 hover:text-white hover:bg-red-800 transition">
+            <Link to="../" className="border border-gray-200 px-4 py-2 rounded-lg inline-block mt-2 text-sm text-gray-500 hover:text-white hover:bg-red-800 transition">
             ← Kembali
             </Link>
         </div>
@@ -82,7 +82,7 @@ export default function MenuDetail() {
 
       {/* TOP BAR (same style) */}
       <div className='bg-red-700 text-white text-xs flex justify-end items-center gap-5 px-10 py-1.5'>
-        <Link to="/login" className='opacity-80 hover:opacity-100'>Login</Link>
+        <Link to="../" className='opacity-80 hover:opacity-100'>Login</Link>
         <div className='flex gap-2'>
           <span className='font-bold border-b border-white cursor-pointer'>ID</span>
           <span className='font-bold cursor-pointer opacity-70'>EN</span>
@@ -91,7 +91,7 @@ export default function MenuDetail() {
 
         {/* NAVBAR */}
         <nav className='bg-white flex items-center justify-between px-10 h-16 shadow-md sticky top-0 z-50'>
-            <a href='/'>
+            <a href='../'>
             <img src={Logo} alt='Logo HokBen' className='h-12' />
             </a>
             <ul className='hidden md:flex gap-7 list-none'>
@@ -103,7 +103,7 @@ export default function MenuDetail() {
                 </li>
             ))}
             </ul>
-            <a href='/order' className='bg-red-700 hover:bg-red-800 text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors'>
+            <a href='../order' className='bg-red-700 hover:bg-red-800 text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors'>
             Order Now
             </a>
         </nav>
@@ -124,15 +124,15 @@ export default function MenuDetail() {
           </p>
 
           <div className="flex gap-3">
-            <button className="px-5 py-2 border border-red-700 text-red-700 rounded-md hover:bg-red-700 hover:text-white">
+            <button onClick={() => window.location.href = "../order"} className="cursor-pointer px-5 py-2 border border-red-700 text-red-700 rounded-md hover:bg-red-700 hover:text-white">
               Add to Cart
             </button>
-            <button className="px-5 py-2 bg-red-700 text-white rounded-md hover:bg-red-800">
+            <button onClick={() => window.location.href = "../order"} className="cursor-pointer px-5 py-2 bg-red-700 text-white rounded-md hover:bg-red-800">
               Order Now
             </button>
           </div>
 
-          <Link to="/about" className="border border-gray-200 px-4 py-2 rounded-lg inline-block mt-6 text-sm text-gray-500 hover:text-white hover:bg-red-800 transition">
+          <Link to="../about" className="cursor-pointer border border-gray-200 px-4 py-2 rounded-lg inline-block mt-6 text-sm text-gray-500 hover:text-white hover:bg-red-800 transition">
             ← Back to Home
           </Link>
         </div>

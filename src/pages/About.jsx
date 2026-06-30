@@ -70,13 +70,13 @@ export default function Home() {
         <ul className='hidden md:flex gap-7 list-none'>
           {navLinks.map((link) => (
             <li key={link}>
-              <a href='/404' className='text-sm font-medium text-gray-800 hover:text-red-700 transition-colors'>
+              <a href='./404' className='text-sm font-medium text-gray-800 hover:text-red-700 transition-colors'>
                 {link}
               </a>
             </li>
           ))}
         </ul>
-        <a href='/order' className='bg-red-700 hover:bg-red-800 text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors'>
+        <a href='./order' className='bg-red-700 hover:bg-red-800 text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors'>
           Order Now
         </a>
       </nav>
@@ -138,7 +138,7 @@ export default function Home() {
                   >
                     Details
                   </Link>
-                  <a href='/order' className='flex-1 text-center text-xs font-semibold bg-red-700 hover:bg-red-800 text-white rounded-md py-1.5 transition-colors'>
+                  <a href='./order' className='flex-1 text-center text-xs font-semibold bg-red-700 hover:bg-red-800 text-white rounded-md py-1.5 transition-colors'>
                     + Order
                   </a>
                 </div>
@@ -203,7 +203,7 @@ export default function Home() {
             <h5 className='text-xs font-bold text-white uppercase tracking-widest mb-4'>Menu</h5>
             <ul className='space-y-2.5'>
               {["Home", "Menu", "Outlet", "Promotion", "News & Events"].map((l) => (
-                <li key={l}><a href='/nanti' className='text-xs text-white/65 hover:text-white transition-colors'>{l}</a></li>
+                <li key={l}><a href='./nanti' className='text-xs text-white/65 hover:text-white transition-colors'>{l}</a></li>
               ))}
             </ul>
           </div>
